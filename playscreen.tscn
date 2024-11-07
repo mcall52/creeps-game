@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkxk1man8dau"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tqud"]
+size = Vector2(36, 163)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_oj083"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afs1t"]
+size = Vector2(1154, 648)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(8, 71.5)
+shape = SubResource("RectangleShape2D_2tqud")
+debug_color = Color(0.713933, 0.482915, 0.0594491, 0.42)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(424, 230)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+material = SubResource("CanvasItemMaterial_oj083")
+position = Vector2(426, 232)
+shape = SubResource("RectangleShape2D_afs1t")
+debug_color = Color(0, 0.540549, 0.956701, 0.42)
